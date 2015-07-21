@@ -1,0 +1,159 @@
+  [1m[36m (3.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (3.7ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateMovies (20150721175736)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (3.0ms)[0m  [1mCREATE TABLE "movies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "director" varchar(255), "runtime_in_minutes" integer, "description" text, "poster_image_url" varchar(255), "release_date" datetime, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150721175736"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (1.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (1.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (4.3ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (4.5ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateMovies (20150721175736)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (3.4ms)[0m  [1mCREATE TABLE "movies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "director" varchar(255), "runtime_in_minutes" integer, "description" text, "poster_image_url" varchar(255), "release_date" datetime, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150721175736"]]
+  [1m[36m (3.5ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (1.5ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 10.0.2.2 at 2015-07-21 20:01:37 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (1.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/railties-4.0.0/lib/rails/templates/rails/welcome/index.html.erb (6.9ms)
+Completed 200 OK in 62ms (Views: 31.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 10.0.2.2 at 2015-07-21 20:01:37 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/railties-4.0.0/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 10.0.2.2 at 2015-07-21 20:01:42 +0000
+
+SyntaxError (/vagrant/Rotten_Mangoes/app/controllers/movies_controller.rb:49: syntax error, unexpected end-of-input, expecting keyword_end):
+  activesupport (4.0.0) lib/active_support/dependencies.rb:423:in `load'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:423:in `block in load_file'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:615:in `new_constants_in'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:422:in `load_file'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:323:in `require_or_load'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:462:in `load_missing_constant'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:183:in `const_missing'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.0) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:534:in `get'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:565:in `constantize'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  rack (1.5.5) lib/rack/etag.rb:23:in `call'
+  rack (1.5.5) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.5) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__779388741__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (22.3ms)
+
+
+Started GET "/movies" for 10.0.2.2 at 2015-07-21 20:02:30 +0000
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (3.1ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 981ms (Views: 958.9ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/movie.css?body=1" for 10.0.2.2 at 2015-07-21 20:02:31 +0000
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2015-07-21 20:02:31 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2015-07-21 20:02:31 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2015-07-21 20:02:31 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2015-07-21 20:02:31 +0000
+
+
+Started GET "/assets/movies.css?body=1" for 10.0.2.2 at 2015-07-21 20:02:31 +0000
+
+
+Started GET "/assets/movie.js?body=1" for 10.0.2.2 at 2015-07-21 20:02:31 +0000
+
+
+Started GET "/assets/movies.js?body=1" for 10.0.2.2 at 2015-07-21 20:02:32 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2015-07-21 20:02:32 +0000
+
+
+Started GET "/movies/new" for 10.0.2.2 at 2015-07-21 20:02:34 +0000
+Processing by MoviesController#new as HTML
+  Rendered movies/new.html.erb within layouts/application (95.3ms)
+Completed 200 OK in 198ms (Views: 194.3ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/movies" for 10.0.2.2 at 2015-07-21 20:04:49 +0000
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swffQ3SF4BF1ccHTnUAGzif9DktuB1AnIx1LLfsFUFU=", "movie"=>{"title"=>"The Guest", "release_date"=>"2014-01-17", "director"=>"Adam Wingard", "runtime_in_minutes"=>"99", "poster_image_url"=>"data:image/jpeg;base64,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", "description"=>"One of the all time greatest movies that you will never hear of until someone tells you it is an all time great movie that you've never heard of."}, "commit"=>"Submit"}
+Completed 500 Internal Server Error in 8ms
+
+NameError (undefined local variable or method `movie_params' for #<MoviesController:0xa2fb598>):
+  app/controllers/movies_controller.rb:19:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (28.7ms)

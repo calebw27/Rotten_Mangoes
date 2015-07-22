@@ -2250,3 +2250,650 @@ Processing by UsersController#new as HTML
   Rendered users/new.html.erb within layouts/application (52.2ms)
   Rendered layouts/_footer.html.erb (0.3ms)
 Completed 200 OK in 249ms (Views: 205.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 10.0.2.2 at 2015-07-22 18:58:54 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (1.3ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (8.0ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 410ms (Views: 367.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 10.0.2.2 at 2015-07-22 18:58:56 +0000
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (1.1ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 124ms (Views: 122.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 10.0.2.2 at 2015-07-22 18:58:56 +0000
+
+
+Started GET "/assets/movie.css?body=1" for 10.0.2.2 at 2015-07-22 18:58:56 +0000
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2015-07-22 18:58:56 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2015-07-22 18:58:56 +0000
+
+
+Started GET "/assets/movies.css?body=1" for 10.0.2.2 at 2015-07-22 18:58:56 +0000
+
+
+Started GET "/assets/users.css?body=1" for 10.0.2.2 at 2015-07-22 18:58:56 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2015-07-22 18:58:56 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2015-07-22 18:58:56 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2015-07-22 18:58:56 +0000
+
+
+Started GET "/assets/movie.js?body=1" for 10.0.2.2 at 2015-07-22 18:58:56 +0000
+
+
+Started GET "/assets/movies.js?body=1" for 10.0.2.2 at 2015-07-22 18:58:57 +0000
+
+
+Started GET "/assets/reviews.js?body=1" for 10.0.2.2 at 2015-07-22 18:58:57 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2015-07-22 18:58:57 +0000
+
+
+Started GET "/assets/users.js?body=1" for 10.0.2.2 at 2015-07-22 18:58:57 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2015-07-22 18:58:57 +0000
+
+
+Started GET "/movies/new" for 10.0.2.2 at 2015-07-22 18:59:03 +0000
+Processing by MoviesController#new as HTML
+  Rendered movies/_form.html.erb (70.3ms)
+  Rendered movies/new.html.erb within layouts/application (94.9ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 231ms (Views: 228.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/movies" for 10.0.2.2 at 2015-07-22 18:59:05 +0000
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (1.7ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 131ms (Views: 129.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/users/new" for 10.0.2.2 at 2015-07-22 18:59:06 +0000
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (23.2ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 192ms (Views: 153.7ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/users" for 10.0.2.2 at 2015-07-22 18:59:25 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"twTtsw448hUxan0rqJsNVoAnpl3Gi0uDDk5iGhuLxKY=", "user"=>{"email"=>"caleb.w27@me.com", "firstname"=>"Caleb", "lastname"=>"Williams", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Submit"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (19.2ms)[0m  INSERT INTO "users" ("created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Wed, 22 Jul 2015 18:59:25 UTC +00:00], ["email", "caleb.w27@me.com"], ["firstname", "Caleb"], ["lastname", "Williams"], ["password_digest", "$2a$10$O98uMQz9K15cbaNBkKJM6ec1Sewp0wD7vaiRTqnoHXvtiR9GOXF8K"], ["updated_at", Wed, 22 Jul 2015 18:59:25 UTC +00:00]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/movies
+Completed 302 Found in 134ms (ActiveRecord: 22.0ms)
+
+
+Started GET "/movies" for 10.0.2.2 at 2015-07-22 18:59:26 +0000
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (1.3ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (2.4ms)
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered layouts/_footer.html.erb (3.6ms)
+Completed 200 OK in 128ms (Views: 125.1ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2015-07-22 18:59:26 +0000
+
+
+Started GET "/assets/users.css?body=1" for 10.0.2.2 at 2015-07-22 18:59:26 +0000
+
+
+Started GET "/assets/movies.css?body=1" for 10.0.2.2 at 2015-07-22 18:59:26 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2015-07-22 18:59:26 +0000
+
+
+Started GET "/assets/movie.css?body=1" for 10.0.2.2 at 2015-07-22 18:59:26 +0000
+
+
+Started GET "/assets/reviews.css?body=1" for 10.0.2.2 at 2015-07-22 18:59:26 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2015-07-22 18:59:26 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2015-07-22 18:59:26 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2015-07-22 18:59:26 +0000
+
+
+Started GET "/assets/movie.js?body=1" for 10.0.2.2 at 2015-07-22 18:59:26 +0000
+
+
+Started GET "/assets/movies.js?body=1" for 10.0.2.2 at 2015-07-22 18:59:26 +0000
+
+
+Started GET "/assets/reviews.js?body=1" for 10.0.2.2 at 2015-07-22 18:59:26 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2015-07-22 18:59:26 +0000
+
+
+Started GET "/assets/users.js?body=1" for 10.0.2.2 at 2015-07-22 18:59:26 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2015-07-22 18:59:26 +0000
+
+
+Started GET "/movies/new" for 10.0.2.2 at 2015-07-22 18:59:32 +0000
+Processing by MoviesController#new as HTML
+  Rendered movies/_form.html.erb (3.2ms)
+  Rendered movies/new.html.erb within layouts/application (25.2ms)
+  [1m[35mUser Load (0.9ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered layouts/_footer.html.erb (2.4ms)
+Completed 200 OK in 152ms (Views: 150.6ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/movies" for 10.0.2.2 at 2015-07-22 19:01:11 +0000
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"twTtsw448hUxan0rqJsNVoAnpl3Gi0uDDk5iGhuLxKY=", "movie"=>{"title"=>"Ant-Man", "release_date"=>"2015-06-29", "director"=>"Peyton Reed", "runtime_in_minutes"=>"117", "poster_image_url"=>"http://t3.gstatic.com/images?q=tbn:ANd9GcRvTs_PtoegY0eToOxODXT12cfV-AipOD6GftFO0ze7wbociMNB", "description"=>"Newest Movie to be released by Marvel and it's friggin' awesome!"}, "commit"=>"Submit"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered movies/_form.html.erb (5.1ms)
+  Rendered movies/new.html.erb within layouts/application (21.1ms)
+  [1m[36mUser Load (1.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered layouts/_footer.html.erb (2.7ms)
+Completed 200 OK in 142ms (Views: 137.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2015-07-22 19:01:11 +0000
+
+
+Started GET "/assets/users.css?body=1" for 10.0.2.2 at 2015-07-22 19:01:11 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2015-07-22 19:01:11 +0000
+
+
+Started GET "/assets/reviews.css?body=1" for 10.0.2.2 at 2015-07-22 19:01:11 +0000
+
+
+Started GET "/assets/movie.css?body=1" for 10.0.2.2 at 2015-07-22 19:01:11 +0000
+
+
+Started GET "/assets/movies.css?body=1" for 10.0.2.2 at 2015-07-22 19:01:12 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2015-07-22 19:01:12 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2015-07-22 19:01:12 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2015-07-22 19:01:12 +0000
+
+
+Started GET "/assets/movie.js?body=1" for 10.0.2.2 at 2015-07-22 19:01:12 +0000
+
+
+Started GET "/assets/movies.js?body=1" for 10.0.2.2 at 2015-07-22 19:01:12 +0000
+
+
+Started GET "/assets/reviews.js?body=1" for 10.0.2.2 at 2015-07-22 19:01:12 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2015-07-22 19:01:12 +0000
+
+
+Started GET "/assets/users.js?body=1" for 10.0.2.2 at 2015-07-22 19:01:12 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2015-07-22 19:01:12 +0000
+
+
+Started POST "/movies" for 10.0.2.2 at 2015-07-22 19:18:46 +0000
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"twTtsw448hUxan0rqJsNVoAnpl3Gi0uDDk5iGhuLxKY=", "movie"=>{"title"=>"Mission: Impossible - Rogue Nation", "release_date"=>"2015-07-31", "director"=>"Christopher McQuarrie", "runtime_in_minutes"=>"120", "poster_image_url"=>"http://www.filmoria.co.uk/wp-content/uploads/2015/06/RogueNation02.jpg", "description"=>"Gotta love Mission Impossible"}, "commit"=>"Submit"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (4.6ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 22 Jul 2015 19:18:46 UTC +00:00], ["description", "Gotta love Mission Impossible"], ["director", "Christopher McQuarrie"], ["poster_image_url", "http://www.filmoria.co.uk/wp-content/uploads/2015/06/RogueNation02.jpg"], ["release_date", Fri, 31 Jul 2015 00:00:00 UTC +00:00], ["runtime_in_minutes", 120], ["title", "Mission: Impossible - Rogue Nation"], ["updated_at", Wed, 22 Jul 2015 19:18:46 UTC +00:00]]
+  [1m[35m (2.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/movies
+Completed 302 Found in 70ms (ActiveRecord: 11.4ms)
+
+
+Started GET "/movies" for 10.0.2.2 at 2015-07-22 19:18:46 +0000
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (1.0ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (27.3ms)
+Completed 500 Internal Server Error in 74ms
+
+ActionView::Template::Error (undefined method `review_average' for nil:NilClass):
+     7:     <h3><%= movie.release_date %></h3>
+     8:     <h4>Dir. <%= movie.release_date %> | <%= movie.runtime_in_minutes %> minutes</h4>
+     9:     <p><%= movie.description %></p>
+    10:     <p><%= @movie.review_average %>/10</p>
+    11:     <hr>
+    12:     <%end%> 
+  app/views/movies/index.html.erb:10:in `block in _app_views_movies_index_html_erb___850819426_95348450'
+  app/views/movies/index.html.erb:4:in `_app_views_movies_index_html_erb___850819426_95348450'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.5ms)
+
+
+Started POST "/movies" for 10.0.2.2 at 2015-07-22 19:19:44 +0000
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"twTtsw448hUxan0rqJsNVoAnpl3Gi0uDDk5iGhuLxKY=", "movie"=>{"title"=>"Mission: Impossible - Rogue Nation", "release_date"=>"2015-07-31", "director"=>"Christopher McQuarrie", "runtime_in_minutes"=>"120", "poster_image_url"=>"http://www.filmoria.co.uk/wp-content/uploads/2015/06/RogueNation02.jpg", "description"=>"Gotta love Mission Impossible"}, "commit"=>"Submit"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (3.5ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 22 Jul 2015 19:19:44 UTC +00:00], ["description", "Gotta love Mission Impossible"], ["director", "Christopher McQuarrie"], ["poster_image_url", "http://www.filmoria.co.uk/wp-content/uploads/2015/06/RogueNation02.jpg"], ["release_date", Fri, 31 Jul 2015 00:00:00 UTC +00:00], ["runtime_in_minutes", 120], ["title", "Mission: Impossible - Rogue Nation"], ["updated_at", Wed, 22 Jul 2015 19:19:44 UTC +00:00]]
+  [1m[35m (3.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/movies
+Completed 302 Found in 13ms (ActiveRecord: 7.1ms)
+
+
+Started GET "/movies" for 10.0.2.2 at 2015-07-22 19:19:44 +0000
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (1.2ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  [1m[35m (1.6ms)[0m  SELECT SUM("reviews"."rating_out_of_ten") AS sum_id FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 1]]
+  [1m[36m (1.4ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  Rendered movies/index.html.erb within layouts/application (92.7ms)
+Completed 500 Internal Server Error in 139ms
+
+ActionView::Template::Error (divided by 0):
+     7:     <h3><%= movie.release_date %></h3>
+     8:     <h4>Dir. <%= movie.release_date %> | <%= movie.runtime_in_minutes %> minutes</h4>
+     9:     <p><%= movie.description %></p>
+    10:     <p><%= movie.review_average %>/10</p>
+    11:     <hr>
+    12:     <%end%> 
+  app/models/movie.rb:14:in `/'
+  app/models/movie.rb:14:in `review_average'
+  app/views/movies/index.html.erb:10:in `block in _app_views_movies_index_html_erb___850819426_95604460'
+  app/views/movies/index.html.erb:4:in `_app_views_movies_index_html_erb___850819426_95604460'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2015-07-22 19:20:40 +0000
+
+
+Started GET "/assets/movies.css?body=1" for 10.0.2.2 at 2015-07-22 19:20:41 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2015-07-22 19:20:41 +0000
+
+
+Started GET "/assets/movie.css?body=1" for 10.0.2.2 at 2015-07-22 19:20:41 +0000
+
+
+Started GET "/assets/users.css?body=1" for 10.0.2.2 at 2015-07-22 19:20:41 +0000
+
+
+Started GET "/assets/reviews.css?body=1" for 10.0.2.2 at 2015-07-22 19:20:41 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2015-07-22 19:20:41 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2015-07-22 19:20:41 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2015-07-22 19:20:41 +0000
+
+
+Started GET "/assets/movie.js?body=1" for 10.0.2.2 at 2015-07-22 19:20:41 +0000
+
+
+Started GET "/assets/movies.js?body=1" for 10.0.2.2 at 2015-07-22 19:20:41 +0000
+
+
+Started GET "/assets/reviews.js?body=1" for 10.0.2.2 at 2015-07-22 19:20:41 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2015-07-22 19:20:41 +0000
+
+
+Started GET "/assets/users.js?body=1" for 10.0.2.2 at 2015-07-22 19:20:41 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2015-07-22 19:20:41 +0000
+
+
+Started POST "/movies" for 10.0.2.2 at 2015-07-22 19:20:45 +0000
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"twTtsw448hUxan0rqJsNVoAnpl3Gi0uDDk5iGhuLxKY=", "movie"=>{"title"=>"Mission: Impossible - Rogue Nation", "release_date"=>"2015-07-31", "director"=>"Christopher McQuarrie", "runtime_in_minutes"=>"120", "poster_image_url"=>"http://www.filmoria.co.uk/wp-content/uploads/2015/06/RogueNation02.jpg", "description"=>"Gotta love Mission Impossible"}, "commit"=>"Submit"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (3.6ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "director", "poster_image_url", "release_date", "runtime_in_minutes", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 22 Jul 2015 19:20:45 UTC +00:00], ["description", "Gotta love Mission Impossible"], ["director", "Christopher McQuarrie"], ["poster_image_url", "http://www.filmoria.co.uk/wp-content/uploads/2015/06/RogueNation02.jpg"], ["release_date", Fri, 31 Jul 2015 00:00:00 UTC +00:00], ["runtime_in_minutes", 120], ["title", "Mission: Impossible - Rogue Nation"], ["updated_at", Wed, 22 Jul 2015 19:20:45 UTC +00:00]]
+  [1m[35m (3.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/movies
+Completed 302 Found in 12ms (ActiveRecord: 6.8ms)
+
+
+Started GET "/movies" for 10.0.2.2 at 2015-07-22 19:20:45 +0000
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (1.3ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (24.0ms)
+Completed 500 Internal Server Error in 70ms
+
+ActionView::Template::Error (undefined method `review_average' for #<ActiveRecord::Relation::ActiveRecord_Relation_Movie:0xb8e0ea8>):
+     7:     <h3><%= movie.release_date %></h3>
+     8:     <h4>Dir. <%= movie.release_date %> | <%= movie.runtime_in_minutes %> minutes</h4>
+     9:     <p><%= movie.description %></p>
+    10:     <p><%= @movies.review_average %>/10</p>
+    11:     <hr>
+    12:     <%end%> 
+  app/views/movies/index.html.erb:10:in `block in _app_views_movies_index_html_erb___850819426_96911110'
+  app/views/movies/index.html.erb:4:in `_app_views_movies_index_html_erb___850819426_96911110'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.4ms)
+
+
+Started GET "/movies" for 10.0.2.2 at 2015-07-22 19:22:39 +0000
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (1.3ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (4.6ms)
+  [1m[36mUser Load (1.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered layouts/_footer.html.erb (33.7ms)
+Completed 200 OK in 162ms (Views: 156.6ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/assets/movie.css?body=1" for 10.0.2.2 at 2015-07-22 19:22:39 +0000
+
+
+Started GET "/assets/reviews.css?body=1" for 10.0.2.2 at 2015-07-22 19:22:39 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2015-07-22 19:22:39 +0000
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2015-07-22 19:22:39 +0000
+
+
+Started GET "/assets/movies.css?body=1" for 10.0.2.2 at 2015-07-22 19:22:39 +0000
+
+
+Started GET "/assets/users.css?body=1" for 10.0.2.2 at 2015-07-22 19:22:39 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2015-07-22 19:22:39 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2015-07-22 19:22:39 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2015-07-22 19:22:39 +0000
+
+
+Started GET "/assets/movie.js?body=1" for 10.0.2.2 at 2015-07-22 19:22:39 +0000
+
+
+Started GET "/assets/movies.js?body=1" for 10.0.2.2 at 2015-07-22 19:22:40 +0000
+
+
+Started GET "/assets/reviews.js?body=1" for 10.0.2.2 at 2015-07-22 19:22:40 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2015-07-22 19:22:40 +0000
+
+
+Started GET "/assets/users.js?body=1" for 10.0.2.2 at 2015-07-22 19:22:40 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2015-07-22 19:22:40 +0000
+
+
+Started GET "/movies/2" for 10.0.2.2 at 2015-07-22 19:22:59 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mMovie Load (1.6ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "2"]]
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_movies_show_html_erb___96607233_97618930 at /vagrant/Rotten_Mangoes/app/views/movies/show.html.erb:4)
+  [1m[36mUser Load (2.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mReview Load (1.4ms)[0m  SELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = ?  [["movie_id", 2]]
+  Rendered movies/show.html.erb within layouts/application (10.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 133ms (Views: 125.8ms | ActiveRecord: 5.2ms)
+
+
+Started DELETE "/movies/2" for 10.0.2.2 at 2015-07-22 19:23:03 +0000
+Processing by MoviesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"twTtsw448hUxan0rqJsNVoAnpl3Gi0uDDk5iGhuLxKY=", "id"=>"2"}
+  [1m[36mMovie Load (1.4ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (3.3ms)[0m  [1mDELETE FROM "movies" WHERE "movies"."id" = ?[0m  [["id", 2]]
+  [1m[35m (4.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/movies
+Completed 302 Found in 15ms (ActiveRecord: 9.1ms)
+
+
+Started GET "/movies" for 10.0.2.2 at 2015-07-22 19:23:03 +0000
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.9ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (2.7ms)
+  [1m[35mUser Load (1.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered layouts/_footer.html.erb (3.1ms)
+Completed 200 OK in 113ms (Views: 110.1ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/movie.css?body=1" for 10.0.2.2 at 2015-07-22 19:23:03 +0000
+
+
+Started GET "/assets/reviews.css?body=1" for 10.0.2.2 at 2015-07-22 19:23:03 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2015-07-22 19:23:03 +0000
+
+
+Started GET "/assets/users.css?body=1" for 10.0.2.2 at 2015-07-22 19:23:03 +0000
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2015-07-22 19:23:03 +0000
+
+
+Started GET "/assets/movies.css?body=1" for 10.0.2.2 at 2015-07-22 19:23:03 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2015-07-22 19:23:03 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2015-07-22 19:23:04 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2015-07-22 19:23:04 +0000
+
+
+Started GET "/assets/movie.js?body=1" for 10.0.2.2 at 2015-07-22 19:23:04 +0000
+
+
+Started GET "/assets/movies.js?body=1" for 10.0.2.2 at 2015-07-22 19:23:04 +0000
+
+
+Started GET "/assets/reviews.js?body=1" for 10.0.2.2 at 2015-07-22 19:23:04 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2015-07-22 19:23:04 +0000
+
+
+Started GET "/assets/users.js?body=1" for 10.0.2.2 at 2015-07-22 19:23:04 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2015-07-22 19:23:04 +0000
+
+
+Started GET "/movies/3" for 10.0.2.2 at 2015-07-22 19:23:08 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMovie Load (1.5ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "3"]]
+DEPRECATION WARNING: :confirm option is deprecated and will be removed from Rails 4.1. Use 'data: { confirm: 'Text' }' instead. (called from _app_views_movies_show_html_erb___96607233_97618930 at /vagrant/Rotten_Mangoes/app/views/movies/show.html.erb:4)
+  [1m[35mUser Load (1.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mReview Load (1.4ms)[0m  [1mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 3]]
+  Rendered movies/show.html.erb within layouts/application (6.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 130ms (Views: 123.5ms | ActiveRecord: 4.3ms)
+
+
+Started DELETE "/movies/3" for 10.0.2.2 at 2015-07-22 19:23:12 +0000
+Processing by MoviesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"twTtsw448hUxan0rqJsNVoAnpl3Gi0uDDk5iGhuLxKY=", "id"=>"3"}
+  [1m[35mMovie Load (1.4ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "3"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.1ms)[0m  DELETE FROM "movies" WHERE "movies"."id" = ?  [["id", 3]]
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/movies
+Completed 302 Found in 12ms (ActiveRecord: 6.8ms)
+
+
+Started GET "/movies" for 10.0.2.2 at 2015-07-22 19:23:12 +0000
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (1.1ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (2.6ms)
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered layouts/_footer.html.erb (2.8ms)
+Completed 200 OK in 119ms (Views: 116.3ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/movie.css?body=1" for 10.0.2.2 at 2015-07-22 19:23:12 +0000
+
+
+Started GET "/assets/users.css?body=1" for 10.0.2.2 at 2015-07-22 19:23:12 +0000
+
+
+Started GET "/assets/movies.css?body=1" for 10.0.2.2 at 2015-07-22 19:23:12 +0000
+
+
+Started GET "/assets/reviews.css?body=1" for 10.0.2.2 at 2015-07-22 19:23:12 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2015-07-22 19:23:12 +0000
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2015-07-22 19:23:13 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2015-07-22 19:23:13 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2015-07-22 19:23:13 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2015-07-22 19:23:13 +0000
+
+
+Started GET "/assets/movie.js?body=1" for 10.0.2.2 at 2015-07-22 19:23:13 +0000
+
+
+Started GET "/assets/movies.js?body=1" for 10.0.2.2 at 2015-07-22 19:23:13 +0000
+
+
+Started GET "/assets/reviews.js?body=1" for 10.0.2.2 at 2015-07-22 19:23:13 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2015-07-22 19:23:13 +0000
+
+
+Started GET "/assets/users.js?body=1" for 10.0.2.2 at 2015-07-22 19:23:13 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2015-07-22 19:23:13 +0000
+
+
+Started GET "/movies/new" for 10.0.2.2 at 2015-07-22 19:23:22 +0000
+Processing by MoviesController#new as HTML
+  Rendered movies/_form.html.erb (3.4ms)
+  Rendered movies/new.html.erb within layouts/application (25.1ms)
+  [1m[35mUser Load (1.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered layouts/_footer.html.erb (2.4ms)
+Completed 200 OK in 150ms (Views: 148.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/movies" for 10.0.2.2 at 2015-07-22 19:23:27 +0000
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (1.0ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (3.6ms)
+  [1m[35mUser Load (1.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered layouts/_footer.html.erb (3.1ms)
+Completed 200 OK in 141ms (Views: 137.9ms | ActiveRecord: 2.6ms)
+
+
+Started DELETE "/sessions/current" for 10.0.2.2 at 2015-07-22 19:23:30 +0000
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"twTtsw448hUxan0rqJsNVoAnpl3Gi0uDDk5iGhuLxKY=", "id"=>"current"}
+Redirected to http://localhost:3000/movies
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 10.0.2.2 at 2015-07-22 19:23:30 +0000
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (1.6ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 127ms (Views: 124.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2015-07-22 19:23:30 +0000
+
+
+Started GET "/assets/movie.css?body=1" for 10.0.2.2 at 2015-07-22 19:23:30 +0000
+
+
+Started GET "/assets/users.css?body=1" for 10.0.2.2 at 2015-07-22 19:23:30 +0000
+
+
+Started GET "/assets/movies.css?body=1" for 10.0.2.2 at 2015-07-22 19:23:30 +0000
+
+
+Started GET "/assets/reviews.css?body=1" for 10.0.2.2 at 2015-07-22 19:23:30 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2015-07-22 19:23:30 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2015-07-22 19:23:30 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2015-07-22 19:23:30 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2015-07-22 19:23:30 +0000
+
+
+Started GET "/assets/movie.js?body=1" for 10.0.2.2 at 2015-07-22 19:23:30 +0000
+
+
+Started GET "/assets/movies.js?body=1" for 10.0.2.2 at 2015-07-22 19:23:30 +0000
+
+
+Started GET "/assets/reviews.js?body=1" for 10.0.2.2 at 2015-07-22 19:23:31 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2015-07-22 19:23:31 +0000
+
+
+Started GET "/assets/users.js?body=1" for 10.0.2.2 at 2015-07-22 19:23:31 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2015-07-22 19:23:31 +0000

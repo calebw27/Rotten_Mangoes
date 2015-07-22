@@ -23,7 +23,7 @@ class MoviesController < ApplicationController
     else
       render :new
     end
-  
+  end
 
   def update
     @movie = Movie.find(params[:id])
@@ -45,8 +45,6 @@ class MoviesController < ApplicationController
 
   def movie_params
     params.require(:movie).permit(:title, :release_date, :director, :runtime_in_minutes, :poster_image_url, :description)
-  end
-
   end
 end
 

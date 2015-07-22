@@ -18,5 +18,10 @@
   <p><%= link_to "Write a review!", new_movie_review_path(@movie) %></p>
   <% else %>
   <p>Please <% link_to "log in", new_session_path %> to see reviews and add your own.</p>
+  <% @movie.reviews.each do |review| %>
+      <p><%= review.text %></p>
+      <p><%= review.rating_out_of_ten %>/10</p>
+      <small>- <%= review.user.full_name %></small><br/>
+    <% end %>
     
   <% end %>

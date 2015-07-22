@@ -1588,3 +1588,665 @@ Started GET "/assets/users.js?body=1" for 10.0.2.2 at 2015-07-22 00:13:23 +0000
 Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2015-07-22 00:13:23 +0000
   [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
   [1m[35mActiveRecord::SchemaMigration Load (1.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/users/new" for 10.0.2.2 at 2015-07-22 01:16:03 +0000
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 15ms
+
+NameError (uninitialized constant UsersController::User):
+  app/controllers/users_controller.rb:3:in `new'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.5ms)
+
+
+Started GET "/users/new" for 10.0.2.2 at 2015-07-22 01:16:03 +0000
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 17ms
+
+NameError (uninitialized constant UsersController::User):
+  app/controllers/users_controller.rb:3:in `new'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.3ms)
+
+
+Started POST "/users" for 10.0.2.2 at 2015-07-22 01:20:36 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swffQ3SF4BF1ccHTnUAGzif9DktuB1AnIx1LLfsFUFU=", "user"=>{"email"=>"caleb.w27@me.com", "firstname"=>"Caleb", "lastname"=>"Williams", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Submit"}
+Completed 500 Internal Server Error in 17ms
+
+NameError (uninitialized constant UsersController::User):
+  app/controllers/users_controller.rb:7:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.3ms)
+
+
+Started GET "/" for 10.0.2.2 at 2015-07-22 01:20:39 +0000
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (3.1ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 429ms (Views: 409.1ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/movie.css?body=1" for 10.0.2.2 at 2015-07-22 01:20:40 +0000
+
+
+Started GET "/assets/movies.css?body=1" for 10.0.2.2 at 2015-07-22 01:20:40 +0000
+
+
+Started GET "/assets/reviews.css?body=1" for 10.0.2.2 at 2015-07-22 01:20:40 +0000
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2015-07-22 01:20:40 +0000
+
+
+Started GET "/assets/users.css?body=1" for 10.0.2.2 at 2015-07-22 01:20:40 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2015-07-22 01:20:40 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2015-07-22 01:20:40 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2015-07-22 01:20:40 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2015-07-22 01:20:40 +0000
+
+
+Started GET "/assets/movie.js?body=1" for 10.0.2.2 at 2015-07-22 01:20:40 +0000
+
+
+Started GET "/assets/movies.js?body=1" for 10.0.2.2 at 2015-07-22 01:20:41 +0000
+
+
+Started GET "/assets/reviews.js?body=1" for 10.0.2.2 at 2015-07-22 01:20:41 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2015-07-22 01:20:41 +0000
+
+
+Started GET "/assets/users.js?body=1" for 10.0.2.2 at 2015-07-22 01:20:41 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2015-07-22 01:20:41 +0000
+
+
+Started GET "/sessions/new" for 10.0.2.2 at 2015-07-22 01:20:43 +0000
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 141ms (Views: 134.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 10.0.2.2 at 2015-07-22 01:20:46 +0000
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 17ms
+
+NameError (uninitialized constant UsersController::User):
+  app/controllers/users_controller.rb:3:in `new'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.7ms)
+
+
+Started GET "/users/new" for 10.0.2.2 at 2015-07-22 01:20:46 +0000
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 16ms
+
+NameError (uninitialized constant UsersController::User):
+  app/controllers/users_controller.rb:3:in `new'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.4ms)
+
+
+Started GET "/" for 10.0.2.2 at 2015-07-22 01:22:41 +0000
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (2.7ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 132ms (Views: 129.0ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/movie.css?body=1" for 10.0.2.2 at 2015-07-22 01:22:41 +0000
+
+
+Started GET "/assets/movies.css?body=1" for 10.0.2.2 at 2015-07-22 01:22:41 +0000
+
+
+Started GET "/assets/reviews.css?body=1" for 10.0.2.2 at 2015-07-22 01:22:41 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2015-07-22 01:22:41 +0000
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2015-07-22 01:22:41 +0000
+
+
+Started GET "/assets/users.css?body=1" for 10.0.2.2 at 2015-07-22 01:22:41 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2015-07-22 01:22:41 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2015-07-22 01:22:41 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2015-07-22 01:22:41 +0000
+
+
+Started GET "/assets/movie.js?body=1" for 10.0.2.2 at 2015-07-22 01:22:42 +0000
+
+
+Started GET "/assets/movies.js?body=1" for 10.0.2.2 at 2015-07-22 01:22:42 +0000
+
+
+Started GET "/assets/reviews.js?body=1" for 10.0.2.2 at 2015-07-22 01:22:42 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2015-07-22 01:22:42 +0000
+
+
+Started GET "/assets/users.js?body=1" for 10.0.2.2 at 2015-07-22 01:22:42 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2015-07-22 01:22:42 +0000
+
+
+Started GET "/users/new" for 10.0.2.2 at 2015-07-22 01:22:43 +0000
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (19.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 176ms (Views: 156.6ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/users" for 10.0.2.2 at 2015-07-22 01:22:52 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swffQ3SF4BF1ccHTnUAGzif9DktuB1AnIx1LLfsFUFU=", "user"=>{"email"=>"caleb.w27@me.com", "firstname"=>"Caleb", "lastname"=>"Williams", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Submit"}
+  [1m[35m (0.2ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (5.4ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 22 Jul 2015 01:22:53 UTC +00:00], ["email", "caleb.w27@me.com"], ["firstname", "Caleb"], ["lastname", "Williams"], ["password_digest", "$2a$10$IEBO.FmW4vFRGUYg61gTQ.x25At/YAdJws.6MedyJHB442fMsxKyK"], ["updated_at", Wed, 22 Jul 2015 01:22:53 UTC +00:00]]
+  [1m[35m (3.2ms)[0m  commit transaction
+Completed 500 Internal Server Error in 128ms
+
+NameError (undefined local variable or method `user' for #<UsersController:0xa5ca6ac>):
+  app/controllers/users_controller.rb:11:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.3ms)
+
+
+Started POST "/users" for 10.0.2.2 at 2015-07-22 01:25:12 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swffQ3SF4BF1ccHTnUAGzif9DktuB1AnIx1LLfsFUFU=", "user"=>{"email"=>"caleb.w27@me.com", "firstname"=>"Caleb", "lastname"=>"Williams", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Submit"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (4.8ms)[0m  INSERT INTO "users" ("created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Wed, 22 Jul 2015 01:25:12 UTC +00:00], ["email", "caleb.w27@me.com"], ["firstname", "Caleb"], ["lastname", "Williams"], ["password_digest", "$2a$10$C.YUYuc7idtGPIV6GDGxCuwIUbk0pwNzw9XmZa56u7rL/SToSI09W"], ["updated_at", Wed, 22 Jul 2015 01:25:12 UTC +00:00]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 94ms
+
+NameError (undefined local variable or method `user' for #<UsersController:0xa303888>):
+  app/controllers/users_controller.rb:11:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (22.5ms)
+
+
+Started POST "/users" for 10.0.2.2 at 2015-07-22 01:27:26 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swffQ3SF4BF1ccHTnUAGzif9DktuB1AnIx1LLfsFUFU=", "user"=>{"email"=>"caleb.w27@me.com", "firstname"=>"Caleb", "lastname"=>"Williams", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Submit"}
+  [1m[35m (0.1ms)[0m  begin transaction
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (4.9ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "firstname", "lastname", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 22 Jul 2015 01:27:26 UTC +00:00], ["email", "caleb.w27@me.com"], ["firstname", "Caleb"], ["lastname", "Williams"], ["password_digest", "$2a$10$aH4P4E5yVJwnkpFXRNNWe.YpvT9toCF5ON8j05wZC6rI5JIHvAE8S"], ["updated_at", Wed, 22 Jul 2015 01:27:26 UTC +00:00]]
+  [1m[35m (2.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/movies
+Completed 302 Found in 128ms (ActiveRecord: 12.2ms)
+
+
+Started GET "/movies" for 10.0.2.2 at 2015-07-22 01:27:26 +0000
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (1.1ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (2.2ms)
+  [1m[35mUser Load (1.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_footer.html.erb (23.6ms)
+Completed 500 Internal Server Error in 172ms
+
+ActionView::Template::Error (undefined method `fullname' for #<User:0xa3f6074>):
+    1: <footer>
+    2:   <small>
+    3:     <% if current_user %>
+    4:       Signed in as <%= current_user.fullname %> (<%= link_to "Log out", session_path("current"), method: :delete %>)
+    5:     <% else %>
+    6:       <%= link_to "Log In", new_session_path %> | <%= link_to "Sign Up", new_user_path %>
+    7:     <% end %>
+  app/views/layouts/_footer.html.erb:4:in `_app_views_layouts__footer_html_erb___761708057_85872630'
+  app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb___7007035_85763470'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.5ms)
+
+
+Started GET "/" for 10.0.2.2 at 2015-07-22 01:27:31 +0000
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (1.2ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (2.3ms)
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_footer.html.erb (18.9ms)
+Completed 500 Internal Server Error in 143ms
+
+ActionView::Template::Error (undefined method `fullname' for #<User:0xa165e04>):
+    1: <footer>
+    2:   <small>
+    3:     <% if current_user %>
+    4:       Signed in as <%= current_user.fullname %> (<%= link_to "Log out", session_path("current"), method: :delete %>)
+    5:     <% else %>
+    6:       <%= link_to "Log In", new_session_path %> | <%= link_to "Sign Up", new_user_path %>
+    7:     <% end %>
+  app/views/layouts/_footer.html.erb:4:in `_app_views_layouts__footer_html_erb___761708057_85872630'
+  app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb___7007035_85763470'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.2ms)
+
+
+Started GET "/" for 10.0.2.2 at 2015-07-22 01:28:32 +0000
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (1.1ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (2.3ms)
+  [1m[35mUser Load (1.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered layouts/_footer.html.erb (3.3ms)
+Completed 200 OK in 129ms (Views: 126.2ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/movie.css?body=1" for 10.0.2.2 at 2015-07-22 01:28:32 +0000
+
+
+Started GET "/assets/reviews.css?body=1" for 10.0.2.2 at 2015-07-22 01:28:32 +0000
+
+
+Started GET "/assets/movies.css?body=1" for 10.0.2.2 at 2015-07-22 01:28:32 +0000
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2015-07-22 01:28:33 +0000
+
+
+Started GET "/assets/users.css?body=1" for 10.0.2.2 at 2015-07-22 01:28:33 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2015-07-22 01:28:33 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2015-07-22 01:28:33 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2015-07-22 01:28:33 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2015-07-22 01:28:33 +0000
+
+
+Started GET "/assets/movie.js?body=1" for 10.0.2.2 at 2015-07-22 01:28:33 +0000
+
+
+Started GET "/assets/movies.js?body=1" for 10.0.2.2 at 2015-07-22 01:28:33 +0000
+
+
+Started GET "/assets/reviews.js?body=1" for 10.0.2.2 at 2015-07-22 01:28:33 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2015-07-22 01:28:33 +0000
+
+
+Started GET "/assets/users.js?body=1" for 10.0.2.2 at 2015-07-22 01:28:33 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2015-07-22 01:28:33 +0000
+
+
+Started GET "/movies/new" for 10.0.2.2 at 2015-07-22 01:28:37 +0000
+Processing by MoviesController#new as HTML
+  Rendered movies/_form.html.erb (19.2ms)
+  Rendered movies/new.html.erb within layouts/application (44.3ms)
+  [1m[36mUser Load (1.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_footer.html.erb (3.0ms)
+Completed 200 OK in 177ms (Views: 173.1ms | ActiveRecord: 2.9ms)
+
+
+Started POST "/movies" for 10.0.2.2 at 2015-07-22 01:29:28 +0000
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swffQ3SF4BF1ccHTnUAGzif9DktuB1AnIx1LLfsFUFU=", "movie"=>{"title"=>"Casablanca", "release_date"=>"", "director"=>"Michael Curtiz", "runtime_in_minutes"=>"102", "poster_image_url"=>"data:image/jpeg;base64,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", "description"=>"Best movie ever"}, "commit"=>"Submit"}
+Completed 500 Internal Server Error in 6ms
+
+NameError (undefined local variable or method `movie_params' for #<MoviesController:0xa0947c8>):
+  app/controllers/movies_controller.rb:19:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (29.5ms)
+
+
+Started POST "/movies" for 10.0.2.2 at 2015-07-22 01:58:50 +0000
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swffQ3SF4BF1ccHTnUAGzif9DktuB1AnIx1LLfsFUFU=", "movie"=>{"title"=>"Casablanca", "release_date"=>"", "director"=>"Michael Curtiz", "runtime_in_minutes"=>"102", "poster_image_url"=>"data:image/jpeg;base64,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", "description"=>"Best movie ever"}, "commit"=>"Submit"}
+Completed 500 Internal Server Error in 7ms
+
+NameError (undefined local variable or method `movie_params' for #<MoviesController:0xa59c70c>):
+  app/controllers/movies_controller.rb:19:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.8ms)
+
+
+Started GET "/" for 10.0.2.2 at 2015-07-22 01:59:27 +0000
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (1.2ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (2.4ms)
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered layouts/_footer.html.erb (2.9ms)
+Completed 200 OK in 121ms (Views: 117.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 10.0.2.2 at 2015-07-22 01:59:28 +0000
+
+
+Started GET "/assets/movies.css?body=1" for 10.0.2.2 at 2015-07-22 01:59:28 +0000
+
+
+Started GET "/assets/movie.css?body=1" for 10.0.2.2 at 2015-07-22 01:59:28 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2015-07-22 01:59:28 +0000
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2015-07-22 01:59:28 +0000
+
+
+Started GET "/assets/users.css?body=1" for 10.0.2.2 at 2015-07-22 01:59:28 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2015-07-22 01:59:28 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2015-07-22 01:59:28 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2015-07-22 01:59:28 +0000
+
+
+Started GET "/assets/movie.js?body=1" for 10.0.2.2 at 2015-07-22 01:59:28 +0000
+
+
+Started GET "/assets/movies.js?body=1" for 10.0.2.2 at 2015-07-22 01:59:28 +0000
+
+
+Started GET "/assets/reviews.js?body=1" for 10.0.2.2 at 2015-07-22 01:59:28 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2015-07-22 01:59:28 +0000
+
+
+Started GET "/assets/users.js?body=1" for 10.0.2.2 at 2015-07-22 01:59:28 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2015-07-22 01:59:28 +0000
+
+
+Started DELETE "/sessions/current" for 10.0.2.2 at 2015-07-22 01:59:31 +0000
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"swffQ3SF4BF1ccHTnUAGzif9DktuB1AnIx1LLfsFUFU=", "id"=>"current"}
+Redirected to http://localhost:3000/movies
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies" for 10.0.2.2 at 2015-07-22 01:59:31 +0000
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (1.4ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 120ms (Views: 118.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2015-07-22 01:59:31 +0000
+
+
+Started GET "/assets/movies.css?body=1" for 10.0.2.2 at 2015-07-22 01:59:31 +0000
+
+
+Started GET "/assets/reviews.css?body=1" for 10.0.2.2 at 2015-07-22 01:59:31 +0000
+
+
+Started GET "/assets/users.css?body=1" for 10.0.2.2 at 2015-07-22 01:59:31 +0000
+
+
+Started GET "/assets/movie.css?body=1" for 10.0.2.2 at 2015-07-22 01:59:32 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2015-07-22 01:59:32 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2015-07-22 01:59:32 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2015-07-22 01:59:32 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2015-07-22 01:59:32 +0000
+
+
+Started GET "/assets/movie.js?body=1" for 10.0.2.2 at 2015-07-22 01:59:32 +0000
+
+
+Started GET "/assets/movies.js?body=1" for 10.0.2.2 at 2015-07-22 01:59:32 +0000
+
+
+Started GET "/assets/reviews.js?body=1" for 10.0.2.2 at 2015-07-22 01:59:32 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2015-07-22 01:59:32 +0000
+
+
+Started GET "/assets/users.js?body=1" for 10.0.2.2 at 2015-07-22 01:59:32 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2015-07-22 01:59:32 +0000
+
+
+Started GET "/movies/new" for 10.0.2.2 at 2015-07-22 01:59:39 +0000
+Processing by MoviesController#new as HTML
+  Rendered movies/_form.html.erb (3.5ms)
+  Rendered movies/new.html.erb within layouts/application (27.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 160ms (Views: 159.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movies" for 10.0.2.2 at 2015-07-22 02:00:03 +0000
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swffQ3SF4BF1ccHTnUAGzif9DktuB1AnIx1LLfsFUFU=", "movie"=>{"title"=>"ertyerty", "release_date"=>"2001-10-10", "director"=>"asdfasdf`", "runtime_in_minutes"=>"100", "poster_image_url"=>"data:image/jpeg;base64,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", "description"=>"sa;lkasdf;lkj"}, "commit"=>"Submit"}
+Completed 500 Internal Server Error in 8ms
+
+NameError (undefined local variable or method `movie_params' for #<MoviesController:0xa1e9574>):
+  app/controllers/movies_controller.rb:19:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.7ms)
+
+
+Started POST "/movies" for 10.0.2.2 at 2015-07-22 02:04:21 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (1.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swffQ3SF4BF1ccHTnUAGzif9DktuB1AnIx1LLfsFUFU=", "movie"=>{"title"=>"ertyerty", "release_date"=>"2001-10-10", "director"=>"asdfasdf`", "runtime_in_minutes"=>"100", "poster_image_url"=>"data:image/jpeg;base64,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", "description"=>"sa;lkasdf;lkj"}, "commit"=>"Submit"}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 87ms
+
+NoMethodError (undefined method `run_time_in_minutes' for #<Movie:0xa9a6f78>):
+  app/controllers/movies_controller.rb:21:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (27.0ms)
+
+
+Started POST "/movies" for 10.0.2.2 at 2015-07-22 02:05:49 +0000
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"swffQ3SF4BF1ccHTnUAGzif9DktuB1AnIx1LLfsFUFU=", "movie"=>{"title"=>"ertyerty", "release_date"=>"2001-10-10", "director"=>"asdfasdf`", "runtime_in_minutes"=>"100", "poster_image_url"=>"data:image/jpeg;base64,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", "description"=>"sa;lkasdf;lkj"}, "commit"=>"Submit"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered movies/_form.html.erb (49.6ms)
+  Rendered movies/new.html.erb within layouts/application (76.9ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 495ms (Views: 447.9ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 10.0.2.2 at 2015-07-22 02:05:49 +0000
+
+
+Started GET "/assets/users.css?body=1" for 10.0.2.2 at 2015-07-22 02:05:50 +0000
+
+
+Started GET "/assets/movie.css?body=1" for 10.0.2.2 at 2015-07-22 02:05:50 +0000
+
+
+Started GET "/assets/movies.css?body=1" for 10.0.2.2 at 2015-07-22 02:05:50 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2015-07-22 02:05:50 +0000
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2015-07-22 02:05:50 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2015-07-22 02:05:50 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2015-07-22 02:05:50 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2015-07-22 02:05:50 +0000
+
+
+Started GET "/assets/movie.js?body=1" for 10.0.2.2 at 2015-07-22 02:05:50 +0000
+
+
+Started GET "/assets/movies.js?body=1" for 10.0.2.2 at 2015-07-22 02:05:50 +0000
+
+
+Started GET "/assets/reviews.js?body=1" for 10.0.2.2 at 2015-07-22 02:05:50 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2015-07-22 02:05:50 +0000
+
+
+Started GET "/assets/users.js?body=1" for 10.0.2.2 at 2015-07-22 02:05:50 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2015-07-22 02:05:50 +0000
+
+
+Started GET "/movies" for 10.0.2.2 at 2015-07-22 02:06:10 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (1.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (1.3ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (8.0ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 427ms (Views: 375.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 10.0.2.2 at 2015-07-22 02:06:11 +0000
+
+
+Started GET "/assets/users.css?body=1" for 10.0.2.2 at 2015-07-22 02:06:11 +0000
+
+
+Started GET "/assets/sessions.css?body=1" for 10.0.2.2 at 2015-07-22 02:06:11 +0000
+
+
+Started GET "/assets/reviews.css?body=1" for 10.0.2.2 at 2015-07-22 02:06:11 +0000
+
+
+Started GET "/assets/movies.css?body=1" for 10.0.2.2 at 2015-07-22 02:06:11 +0000
+
+
+Started GET "/assets/movie.css?body=1" for 10.0.2.2 at 2015-07-22 02:06:11 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 10.0.2.2 at 2015-07-22 02:06:11 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 10.0.2.2 at 2015-07-22 02:06:11 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 10.0.2.2 at 2015-07-22 02:06:12 +0000
+
+
+Started GET "/assets/movie.js?body=1" for 10.0.2.2 at 2015-07-22 02:06:12 +0000
+
+
+Started GET "/assets/movies.js?body=1" for 10.0.2.2 at 2015-07-22 02:06:12 +0000
+
+
+Started GET "/assets/reviews.js?body=1" for 10.0.2.2 at 2015-07-22 02:06:12 +0000
+
+
+Started GET "/assets/sessions.js?body=1" for 10.0.2.2 at 2015-07-22 02:06:12 +0000
+
+
+Started GET "/assets/users.js?body=1" for 10.0.2.2 at 2015-07-22 02:06:12 +0000
+
+
+Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2015-07-22 02:06:12 +0000
+
+
+Started GET "/sessions/new" for 10.0.2.2 at 2015-07-22 02:06:15 +0000
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 162ms (Views: 160.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for 10.0.2.2 at 2015-07-22 02:06:17 +0000
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (52.2ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 249ms (Views: 205.4ms | ActiveRecord: 1.7ms)

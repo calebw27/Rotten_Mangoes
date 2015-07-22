@@ -11,5 +11,11 @@ class User < ActiveRecord::Base
   validates :lastname, presence: true
   
   validates :password, length: { in: 6..20 }, on: :create
+
+  def full_name
+    "#{firstname} #{lastname}"
+  end
+
   
 end
+

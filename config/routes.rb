@@ -1,18 +1,23 @@
 RottenMangoes::Application.routes.draw do
-  get "reviews/new"
-  get "reviews/create"
-  get "sessions/new"
-  get "sessions/create"
-  resources :movies do 
+
+  root to: 'movies#index'
+
+  resources :movies do
     resources :reviews, only: [:new, :create]
     resources :sessions, only: [:new, :create, :destroy]
   end
 
-  resources :users, only: [:new, :create]
+  resources :users do
+    resources :movies, only: [:new, :create]
+  end
+
+  namespace :admin do
+    resources :users, except: [:new, :create]
+  end
 
   resources :sessions, only: [:new, :create, :destroy]
 
-  root to: 'movies#index'
+
 
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -55,7 +60,7 @@ RottenMangoes::Application.routes.draw do
   #       get 'recent', on: :collection
   #     end
   #   end
-  
+
   # Example resource route with concerns:
   #   concern :toggleable do
   #     post 'toggle'

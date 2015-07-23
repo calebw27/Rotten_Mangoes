@@ -2,6 +2,7 @@
 
 <%= link_to image_tag(@movie.poster_image_url), movie_path(@movie) %>
 <h2><%= @movie.title %> (<%= link_to "edit", edit_movie_path(@movie) %>, <%= link_to "delete", movie_path(@movie), method: :delete, confirm: "You sure?" %>)</h2>
+<p><%= @movie.image %></p>
 <h3><%= @movie.release_date %></h3>
 <h4>Dir. <%= @movie.director %> | <%= @movie.runtime_in_minutes %> minutes</h4>
 <p><%= @movie.description %></p>
@@ -24,5 +25,5 @@
       <p><%= @movie.review_average %>/10</p>
       <small>- <%= review.user.full_name %></small><br/>
     <% end %>
-    
+
   <% end %>

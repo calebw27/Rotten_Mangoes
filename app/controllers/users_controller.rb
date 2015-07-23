@@ -10,7 +10,7 @@ class UsersController < ApplicationController
       session[:user_id] = @user.id
       redirect_to movies_path, notice: "Welcome aboard, #{@user.firstname}!"
     else
-      render :new      
+      render :new
     end
   end
 
@@ -20,5 +20,7 @@ class UsersController < ApplicationController
     params.require(:user).permit(:email, :firstname, :lastname, :password, :password_confirmation)
   end
 
+
+<%=  %>
 
 end

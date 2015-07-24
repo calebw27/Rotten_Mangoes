@@ -11,9 +11,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150722000435) do
+ActiveRecord::Schema.define(version: 20150723212445) do
 
-  create_table "movies", force: true do |t|
+  create_table "movies", force: :cascade do |t|
     t.string   "title"
     t.string   "director"
     t.integer  "runtime_in_minutes"
@@ -22,9 +22,10 @@ ActiveRecord::Schema.define(version: 20150722000435) do
     t.datetime "release_date"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "image"
   end
 
-  create_table "reviews", force: true do |t|
+  create_table "reviews", force: :cascade do |t|
     t.integer  "user_id"
     t.integer  "movie_id"
     t.text     "text"
@@ -36,7 +37,7 @@ ActiveRecord::Schema.define(version: 20150722000435) do
   add_index "reviews", ["movie_id"], name: "index_reviews_on_movie_id"
   add_index "reviews", ["user_id"], name: "index_reviews_on_user_id"
 
-  create_table "users", force: true do |t|
+  create_table "users", force: :cascade do |t|
     t.string   "email"
     t.string   "password_digest"
     t.datetime "created_at"

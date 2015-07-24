@@ -4,7 +4,7 @@ RottenMangoes::Application.routes.draw do
 
   resources :movies do
     resources :reviews, only: [:new, :create]
-    resources :sessions, only: [:new, :create, :destroy]
+    resources :session, only: [:new, :create, :destroy]
   end
 
   resources :users do
@@ -12,10 +12,12 @@ RottenMangoes::Application.routes.draw do
   end
 
   namespace :admin do
-    resources :users, except: [:new, :create]
+    resources :users
+    post '/users/:id', to: 'users#login_as_user', as: 'login_as_user'
+    get '/re-log', to: 'users#return_to_admin', as: 'login_back_to_admin'
   end
 
-  resources :sessions, only: [:new, :create, :destroy]
+  resources :session, only: [:new, :create, :destroy]
 
 
 
